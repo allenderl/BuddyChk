@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buddy Check</string>
+    
+    <string name="group_title_create">Create new Group</string>
+	<string name="group_title_loation">Group Location</string>
+	<string name="group_list_empty">You have not create any group yet.</string>
+	
+	<string name="tab_title_invite">Group\'em</string>
+	<string name="tab_title_map">Track\'em</string>
+	<string name="tab_title_group_list">My Groups</string>
+	
+</resources>
