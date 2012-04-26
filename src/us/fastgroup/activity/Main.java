@@ -33,8 +33,7 @@ public class Main extends TabActivity {
     private void setTabs(){
     	tabHost = getTabHost();
 		addTab(R.string.tab_title_invite, R.drawable.tab_invite_selector, new Intent().setClass(this, Invite.class));
-		addTab(R.string.tab_title_map, R.drawable.tab_map_selector, new Intent().setClass(this, Map.class));
-		addTab(R.string.tab_title_group_list, R.drawable.tab_list_selector, new Intent().setClass(this, GroupList.class));
+		addTab(R.string.tab_title_group_list, R.drawable.tab_list_selector, new Intent().setClass(this, MessagesList.class));
     }
     
     private void addTab(int labelId, int drawableId, Intent intent) {
@@ -42,8 +41,6 @@ public class Main extends TabActivity {
 		View tabIndicator = LayoutInflater.from(this).inflate(R.layout.tab_indicator, getTabWidget(), false);
 		TextView title = (TextView) tabIndicator.findViewById(R.id.tab_title);
 		title.setText(labelId);
-		ImageView icon = (ImageView) tabIndicator.findViewById(R.id.tab_icon);
-		icon.setImageResource(drawableId);
 		spec.setIndicator(tabIndicator);
 		spec.setContent(intent);
 		tabHost.addTab(spec);

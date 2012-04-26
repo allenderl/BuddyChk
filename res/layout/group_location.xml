@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_venue_suggest_address"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bkg_color" 
+    android:orientation="vertical" >
+
+    	<TextView android:id="@+id/text_view_title" 
+    	    android:text="@string/group_title_location" 
+    		android:layout_marginLeft="10dp" 
+    		android:layout_height="wrap_content" 
+    		style="@style/Title" 
+    		android:layout_alignParentTop="true" 
+    		android:layout_width="fill_parent" />
+
+    	<ScrollView android:id="@+id/scrollLayoutVenueSuggest" 
+    	    android:layout_below="@id/text_view_title"   
+    		android:layout_height="fill_parent" 
+    		android:layout_width="fill_parent" 
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginRight="10dp" >
+    	    
+    		<TableLayout android:id="@+id/tableLayoutVenueSuggest" 
+    			android:layout_height="wrap_content" 
+    			android:layout_width="fill_parent" >
+				<Button android:id="@+id/buttonAddressMap" 
+				    android:layout_height="wrap_content" 
+				    android:text="@string/button_map_it" 
+				    android:layout_width="wrap_content" 
+				    android:gravity="center"  
+				    style="@style/Button" 
+				    android:layout_marginBottom="10dp" ></Button>
+	    		<EditText android:id="@+id/editTextAddressStreet" android:hint="@string/general_address_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPostalAddress" android:imeOptions="actionNext" android:singleLine="true">
+	    			<requestFocus></requestFocus>
+	    		</EditText>
+	    		<EditText android:id="@+id/editTextAddressCrossStreet" android:hint="@string/general_address_cross_street" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPostalAddress" android:imeOptions="actionNext" android:singleLine="true">
+	    		</EditText>
+	    		<EditText android:id="@+id/editTextAddressCity" android:hint="@string/general_address_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPersonName" android:imeOptions="actionNext" android:singleLine="true">
+	    		</EditText>
+	    		<Spinner android:id="@+id/spinnerTextAddressState" 
+	    			android:entries="@array/states_abbrev"
+	    			android:contentDescription="@string/general_address_state" 
+	    			android:prompt="@string/general_address_state" 
+	    			android:layout_width="wrap_content" 
+	    			android:layout_height="wrap_content" ></Spinner>
+	    		<EditText android:id="@+id/editTextAddressZipCode" android:hint="@string/general_address_zip_code" android:inputType="number" android:layout_height="wrap_content" android:layout_width="wrap_content" android:imeOptions="actionDone" android:singleLine="true"></EditText>
+				<Button android:id="@+id/buttonAddressDone" 
+				    android:layout_height="wrap_content" 
+				    android:text="@string/button_done" 
+				    android:layout_width="wrap_content" 
+				    android:gravity="center" 
+				    style="@style/Button" 
+				    android:layout_marginBottom="10dp" ></Button>
+    		</TableLayout>
+    	</ScrollView>
+</RelativeLayout>

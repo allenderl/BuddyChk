@@ -7,4 +7,14 @@
 		<color name="red" >#FF0000</color>
 		<color name="blue" >#0000FF</color>
 		<color name="green" >#00FF00</color>
+		
+		<color name="text_label" >#333333</color>
+		<color name="bkg_color" >#87CEFA</color>
+		
+		<color name="button_green" >#ADFF2F</color>
+		<color name="bkg_field" >#F8F8FF</color>
+		<color name="brd_field" >#333333</color>
+		<color name="button_pink" >#DC143C</color>
+		<color name="button_text" >#F8F8FF</color>
+		
 	</resources>

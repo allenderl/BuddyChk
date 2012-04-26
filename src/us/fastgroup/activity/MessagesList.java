@@ -1,28 +1,21 @@
 package us.fastgroup.activity;
 
 import us.fastgroup.R;
+import android.app.ListActivity;
 import android.os.Bundle;
-
-import com.google.android.maps.MapActivity;
 
 /**
  * @author Oscar Salguero
  *
  */
 
-public class Map extends MapActivity {
-
-	@Override
-	protected boolean isRouteDisplayed() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
+public class MessagesList extends ListActivity {
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.map);
+        setContentView(R.layout.messages_list);
         
-    }
-	
+    }	
+
 }

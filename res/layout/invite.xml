@@ -1,8 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/linear_layout_invite" 
+<RelativeLayout android:id="@+id/linear_layout_invite" 
 	android:layout_width="fill_parent" 
 	android:layout_height="fill_parent" 
-	android:orientation="vertical"  
+	android:orientation="vertical" 
+	android:background="@color/bkg_color"   
 	xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditText
+		android:layout_margin="10dp"  
+        android:id="@+id/edit_text_buddy_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true"
+        android:ems="10"  
+        android:width="200dp" 
+        style="@style/Field"
+        android:hint="@string/general_buddy_names"
+        android:inputType="textPersonName" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_add" 
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:layout_margin="10dp"  
+        android:layout_toRightOf="@id/edit_text_buddy_names"
+        android:text="@string/button_add" />
+
+    <TextView 
+        android:layout_marginLeft="10dp" 
+        android:layout_marginRight="10dp"  
+        android:id="@+id/text_view_buddies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/general_buddies" 
+        style="@style/Label" 
+        android:layout_below="@id/edit_text_buddy_names" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edit_text_buddies" 
+        android:layout_marginLeft="10dp" 
+        android:layout_marginRight="10dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:lines="2" 
+        android:layout_below="@id/text_view_buddies" 
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_set_group_location"
+        style="@style/Button" 
+        android:layout_margin="10dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/edit_text_buddies"
+        android:text="@string/general_location" />
+
+    <Button
+        android:id="@+id/button_set_group_date_and_time"
+        style="@style/Button" 
+        android:layout_margin="10dp"  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_set_group_location"
+        android:text="@string/general_group_time_and_date" />
+
+    <TextView 
+        style="@style/Label" 
+        android:layout_marginLeft="10dp" 
+        android:layout_marginRight="10dp"  
+        android:id="@+id/text_view_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/button_set_group_date_and_time" 
+        android:text="@string/general_message"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edit_text_message" 
+        android:layout_marginLeft="10dp" 
+        android:layout_marginRight="10dp" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:lines="3" 
+        android:layout_below="@id/text_view_message" 
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_send"
+        style="@style/Button" 
+        android:width="150dp" 
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_message"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:text="@string/button_send" />
 	
-</LinearLayout>
+</RelativeLayout>

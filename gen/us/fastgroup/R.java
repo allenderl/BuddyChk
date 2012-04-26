@@ -8,57 +8,119 @@
 package us.fastgroup;
 
 public final class R {
+    public static final class array {
+        public static final int states_abbrev=0x7f040000;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f040000;
-        public static final int blue=0x7f040005;
-        public static final int gray=0x7f040002;
-        public static final int gray_light=0x7f040003;
-        public static final int green=0x7f040006;
-        public static final int red=0x7f040004;
-        public static final int white=0x7f040001;
+        public static final int bkg_color=0x7f050008;
+        public static final int bkg_field=0x7f05000a;
+        public static final int black=0x7f050000;
+        public static final int blue=0x7f050005;
+        public static final int brd_field=0x7f05000b;
+        public static final int button_green=0x7f050009;
+        public static final int button_pink=0x7f05000c;
+        public static final int button_text=0x7f05000d;
+        public static final int gray=0x7f050002;
+        public static final int gray_light=0x7f050003;
+        public static final int green=0x7f050006;
+        public static final int red=0x7f050004;
+        public static final int text_label=0x7f050007;
+        public static final int white=0x7f050001;
     }
     public static final class dimen {
-        public static final int corner_radius=0x7f050000;
-        public static final int tab_space=0x7f050002;
-        public static final int tab_space_plus1=0x7f050003;
-        public static final int tab_space_top=0x7f050001;
+        public static final int corner_radius=0x7f060000;
+        public static final int tab_space=0x7f060002;
+        public static final int tab_space_plus1=0x7f060003;
+        public static final int tab_space_top=0x7f060001;
     }
     public static final class drawable {
         public static final int ic_badge=0x7f020000;
         public static final int ic_launcher=0x7f020001;
-        public static final int tab_invite_selector=0x7f020002;
-        public static final int tab_list_selector=0x7f020003;
-        public static final int tab_map_selector=0x7f020004;
-        public static final int tab_selected=0x7f020005;
-        public static final int tab_unselected=0x7f020006;
+        public static final int ic_splash=0x7f020002;
+        public static final int tab_invite_selector=0x7f020003;
+        public static final int tab_list_selector=0x7f020004;
+        public static final int tab_map_selector=0x7f020005;
+        public static final int tab_selected=0x7f020006;
+        public static final int tab_unselected=0x7f020007;
     }
     public static final class id {
-        public static final int linear_layout_group_map=0x7f070003;
-        public static final int linear_layout_invite=0x7f070001;
-        public static final int main_layout=0x7f070002;
-        public static final int map=0x7f070004;
-        public static final int relative_layout_group_list=0x7f070000;
-        public static final int tab_icon=0x7f070005;
-        public static final int tab_title=0x7f070006;
-        public static final int title=0x7f070007;
+        public static final int buttonAddressDone=0x7f09000a;
+        public static final int buttonAddressMap=0x7f090004;
+        public static final int button_add=0x7f09000d;
+        public static final int button_map_done=0x7f090017;
+        public static final int button_send=0x7f090014;
+        public static final int button_set_group_date_and_time=0x7f090011;
+        public static final int button_set_group_location=0x7f090010;
+        public static final int editTextAddressCity=0x7f090007;
+        public static final int editTextAddressCrossStreet=0x7f090006;
+        public static final int editTextAddressStreet=0x7f090005;
+        public static final int editTextAddressZipCode=0x7f090009;
+        public static final int edit_text_buddies=0x7f09000f;
+        public static final int edit_text_buddy_names=0x7f09000c;
+        public static final int edit_text_message=0x7f090013;
+        public static final int linear_layout_invite=0x7f09000b;
+        public static final int linear_layout_venue_suggest_address=0x7f090000;
+        public static final int main_layout=0x7f090015;
+        public static final int map=0x7f090018;
+        public static final int relative_layout_group_list=0x7f090019;
+        public static final int relative_layout_group_map=0x7f090016;
+        public static final int scrollLayoutVenueSuggest=0x7f090002;
+        public static final int spinnerTextAddressState=0x7f090008;
+        public static final int tab_title=0x7f09001a;
+        public static final int tableLayoutVenueSuggest=0x7f090003;
+        public static final int text_view_buddies=0x7f09000e;
+        public static final int text_view_message=0x7f090012;
+        public static final int text_view_title=0x7f090001;
+        public static final int title=0x7f09001b;
     }
     public static final class layout {
-        public static final int group_list=0x7f030000;
+        public static final int group_location=0x7f030000;
         public static final int invite=0x7f030001;
         public static final int main=0x7f030002;
         public static final int map=0x7f030003;
-        public static final int tab_indicator=0x7f030004;
-        public static final int title_bar=0x7f030005;
+        public static final int messages_list=0x7f030004;
+        public static final int tab_indicator=0x7f030005;
+        public static final int title_bar=0x7f030006;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
-        public static final int group_list_empty=0x7f060003;
-        public static final int group_title_create=0x7f060001;
-        public static final int group_title_loation=0x7f060002;
-        public static final int tab_title_group_list=0x7f060006;
-        public static final int tab_title_invite=0x7f060004;
-        public static final int tab_title_map=0x7f060005;
+        public static final int app_name=0x7f070000;
+        public static final int button_add=0x7f070016;
+        public static final int button_close=0x7f070014;
+        public static final int button_done=0x7f070015;
+        public static final int button_map_it=0x7f070018;
+        public static final int button_send=0x7f070017;
+        public static final int dialog_title_network_error=0x7f070010;
+        public static final int dialog_title_warning=0x7f070011;
+        public static final int error_address_field_validation=0x7f070013;
+        public static final int error_network_no_internet_connection=0x7f070012;
+        public static final int general_address_city=0x7f07000b;
+        public static final int general_address_cross_street=0x7f07000a;
+        public static final int general_address_state=0x7f07000c;
+        public static final int general_address_street=0x7f070009;
+        public static final int general_address_zip_code=0x7f07000d;
+        public static final int general_buddies=0x7f070005;
+        public static final int general_buddy_names=0x7f070004;
+        public static final int general_group_time_and_date=0x7f070006;
+        public static final int general_location=0x7f070008;
+        public static final int general_message=0x7f070007;
+        public static final int group_list_empty=0x7f070002;
+        public static final int group_title_create=0x7f070001;
+        public static final int group_title_location=0x7f070003;
+        public static final int send_sms=0x7f070019;
+        public static final int tab_title_group_list=0x7f07000f;
+        public static final int tab_title_invite=0x7f07000e;
+    }
+    public static final class style {
+        public static final int Button=0x7f080005;
+        public static final int Field=0x7f080004;
+        public static final int Geopon=0x7f080006;
+        /**  Text 
+         */
+        public static final int Label=0x7f080001;
+        public static final int LittleTextField=0x7f080003;
+        public static final int SplashScreen=0x7f080000;
+        public static final int Title=0x7f080002;
     }
 }

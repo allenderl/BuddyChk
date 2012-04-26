@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/linear_layout_group_map" 
+<RelativeLayout android:id="@+id/relative_layout_group_map" 
 	android:layout_width="fill_parent" 
-	android:layout_height="fill_parent" 
-	android:orientation="vertical"  
-	xmlns:android="http://schemas.android.com/apk/res/android" 
-	android:background="@color/white" >
+	android:layout_height="wrap_content" 
+	android:orientation="vertical" 
+	android:background="@color/bkg_color"  
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+		<Button android:id="@+id/button_map_done"
+		    style="@style/Button" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="4dp"
+		    android:gravity="center" 
+		   	android:layout_alignParentTop="true" 
+		    android:text="@string/button_done" />
+		<!-- Insert your own Google Maps Android API Key into the apiKey attribute -->
 		<com.google.android.maps.MapView 
-	    	android:id="@+id/map" 
-	    	android:layout_width="fill_parent"
-	    	android:layout_height="fill_parent" 
-	    	android:layout_margin="4dp" 
-	    	android:clickable="true" 
-	    	android:keepScreenOn="true" 
-	    	android:apiKey="05SVuIeaXImtLNhC_WqOb-l1mg6DHdkQqOTR_Mg" 
-	    	android:background="@color/white" 
-		/>
-</LinearLayout>
+		    android:layout_below="@id/button_map_done"
+		    android:id="@+id/map" 
+		    android:layout_width="match_parent" 
+		    android:layout_height="match_parent" 
+		    android:layout_margin="4dp" 
+		    android:apiKey="" 
+		    android:clickable="true" 
+		    android:layout_alignParentBottom="true"
+		    android:keepScreenOn="true" />
+
+</RelativeLayout>

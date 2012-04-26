@@ -3,11 +3,36 @@
     <string name="app_name">Buddy Check</string>
     
     <string name="group_title_create">Create new Group</string>
-	<string name="group_title_loation">Group Location</string>
-	<string name="group_list_empty">You have not create any group yet.</string>
+	<string name="group_list_empty">You have no group messages yet.</string>
 	
-	<string name="tab_title_invite">Group\'em</string>
-	<string name="tab_title_map">Track\'em</string>
-	<string name="tab_title_group_list">My Groups</string>
+	<string name="group_title_location">Set Location</string>
+	
+	<string name="general_buddy_names">Enter your Buddy\'s phone</string>
+	<string name="general_buddies">Buddies:</string>
+	<string name="general_group_time_and_date">Time and Date</string>
+	<string name="general_message">Message:</string>
+	<string name="general_location">Set Location</string>
+	
+	<string name="general_address_street">Street</string>
+	<string name="general_address_cross_street">Cross Street</string>
+	<string name="general_address_city">City</string>
+	<string name="general_address_state">State</string>
+	<string name="general_address_zip_code">Zip Code</string>
+	
+	<string name="tab_title_invite">Buddies</string>
+	<string name="tab_title_group_list">Messages</string>
+	
+	<string name="dialog_title_network_error">Error</string>
+	<string name="dialog_title_warning">Warning</string>
+	<string name="error_network_no_internet_connection">No Internet Connection</string>
+	<string name="error_address_field_validation">Please complete the address to group at.</string>
+	
+	<string name="button_close">Close</string>
+	<string name="button_done">Done</string>
+	<string name="button_add">Add</string>
+	<string name="button_send">Send Message</string>
+	<string name="button_map_it">Map It</string>
+	
+	<string name="send_sms">Send Text Message</string>
 	
 </resources>

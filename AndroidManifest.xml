@@ -4,7 +4,7 @@
     android:versionCode="1" 
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="8" />
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="8" android:maxSdkVersion="8" />
     
 	<uses-permission android:name="android.permission.INTERNET" />
 	
@@ -33,9 +33,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name="us.fastgroup.activity.Map" android:launchMode="singleInstance" />
-		<activity android:name="us.fastgroup.activity.GroupList" android:launchMode="singleInstance" />
-		<activity android:name="us.fastgroup.activity.Invite" android:launchMode="singleInstance" />
+		<activity android:name=".activity.GroupLocation" android:launchMode="singleInstance" />
+		<activity android:name=".activity.MessagesList" android:launchMode="singleInstance" />
+		<activity android:name=".activity.Invite" android:launchMode="singleInstance" />
+		<activity android:name=".activity.MapIt" android:launchMode="singleInstance" />
 		
     </application>
 
